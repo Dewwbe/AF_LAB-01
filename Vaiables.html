@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let a =10;
+            function f(){
+                if(true){
+                    let b=9
+                    //it prints 9
+                    console.log(b);
+                }
+                //it gives error as it 
+                //defined in if block
+                console.log(b);
+
+            }
+            f()
+
+            //it prints 10 as a is declared in this block
+            console.log(a)
+        </script>
+        <p>Press F12 and see the result in console view.</p>
+    </body>
+</html>

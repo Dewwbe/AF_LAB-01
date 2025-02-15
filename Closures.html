@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2> Javascript closure</h2>
+
+        <!-- A closure is a function having access to the parent scope , even after the paerent function has closed-->
+
+        <p id="demo"></p>
+        <script>
+            // A closure gives you asccess to an outer function's scope from an inner function.
+
+            function greeting(){
+                let msg='Hi';
+
+                function sayHi(){
+                    console.log(msg);
+                }
+                return sayHi;
+            }
+            let hi =greeting();
+            hi(); //still can access the message variable
+        </script>
+    </body>
+</html>

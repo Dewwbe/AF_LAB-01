@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            const a={
+                prop1:10,
+                prop2:9
+            }
+
+            //it is allowed
+            a.prop1=3
+
+            //it is not allowed
+            a={
+                b:10,
+                prop2:9
+            }
+        </script>
+    </body>
+</html>

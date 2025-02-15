@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //What is this?In js this keyword is used to refer to an object.
+            //which object depends on how this is being invoked(used or called)
+            //the this keyword refers to different objects depending on how it is used:
+            //in an object method , this refers to the object.
+
+            class Car{
+                constructor(name){
+                    this.brand=name;
+                }
+                present(){
+                    return 'Ihave a '+ this.brand;
+                }
+            }
+
+            const mycar =new Car("Ford");
+            document.write(mycar.present());
+        </script>
+    </body>
+</html>
